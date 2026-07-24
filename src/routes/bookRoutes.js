@@ -3,12 +3,10 @@ const router = express.Router();
 const bookController = require('../controllers/bookController');
 const autenticarToken = require('../middlewares/authMiddleware');
 
-// 🌐 Rota PÚBLICA: qualquer um pode ver os livros na tela
-router.get('/', bookController.listarLivros);         // READ (Listar)
+router.get('/', bookController.listarLivros);
 
-// 🛡️ Rotas PROTEGIDAS: exigem Token JWT para alterar os dados
-router.post('/', autenticarToken, bookController.criarLivro);          // CREATE (Criar)
-router.put('/:id', autenticarToken, bookController.atualizarLivro);     // UPDATE (Atualizar)
-router.delete('/:id', autenticarToken, bookController.deletarLivro);   // DELETE (Apagar)
+router.post('/', autenticarToken, bookController.criarLivro);         
+router.put('/:id', autenticarToken, bookController.atualizarLivro);     
+router.delete('/:id', autenticarToken, bookController.deletarLivro);   
 
 module.exports = router;
