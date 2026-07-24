@@ -3,13 +3,54 @@
 ## **Desenvolvedor:**
 * Paulo Castro
 
->Esta é a API RESTful desenvolvida para a AV1 do Oxetech no curso de Desenvolvimento Web Full Stack. Ela é responsável por fornecer a inteligência do sistema, gerenciando a autenticação segura de usuários, regras de negócio e o controle completo de CRUD dos livros na estante, garantindo a persistência eficiente dos dados em nuvem.
+> Esta é a API RESTful desenvolvida para a AV1 do Oxetech no curso de Desenvolvimento Web Full Stack. O sistema gerencia a autenticação de usuários, regras de negócio e o controle de CRUD completo dos livros na estante, com persistência relacional em nuvem.
 
-## **Tecnologias Utilizadas:**
-* **Node.js** (Ambiente de execução JavaScript)
-* **Express.js** (Framework para construção da API REST)
+---
+
+## **Credenciais para Teste (Avaliação):**
+Para testar a aplicação publicada e a proteção de rotas via JWT, utilize a conta de testes abaixo:
+
+* **E-mail:** `usuario.teste@email.com`
+* **Senha:** `estante123`
+
+---
+
+## **Links da Aplicação:**
+* **Aplicação Publicada (Front-End - Vercel):** `https://seu-projeto-frontend.vercel.app`
+* **API em Nuvem (Back-End - Render):** `https://projeto-estante-back-end.onrender.com`
+
+---
+
+## **Tecnologias Utilizadas & Deploy:**
+* **Node.js** (Ambiente de execução)
+* **Express.js** (Framework web para API REST)
 * **PostgreSQL** (Banco de dados relacional)
-* **JWT - JSON Web Token** (Autenticação e proteção de rotas)
-* **Bcrypt.js** (Criptografia e hashing seguro de senhas)
-* **CORS** (Controle e permissão de requisições do Front-End)
-* **Dotenv** (Gerenciamento seguro de variáveis de ambiente)
+* **JWT (JSON Web Token)** (Autenticação e controle de acesso)
+* **Bcrypt.js** (Criptografia e hashing de senhas)
+* **CORS** (Configuração de origens permitidas)
+* **Dotenv** (Gerenciamento de variáveis de ambiente)
+* **Render** (Hospedagem da API e Banco de Dados PostgreSQL)
+* **Vercel** (Hospedagem do Front-End)
+
+---
+
+## **Arquitetura e Organização (MVC):**
+O projeto segue o padrão arquitetural **MVC**, garantindo separação clara de responsabilidades:
+
+* `src/models/`: Definição e comunicação direta com as tabelas do PostgreSQL.
+* `src/controllers/`: Regras de negócio da aplicação e manipulação das requisições/respostas.
+* `src/routes/`: Mapeamento dos endpoints da API (`/auth` e `/livros`).
+* `src/middlewares/`: Validação de tokens JWT e tratamento de autorizações (401/403).
+
+---
+
+## **Endpoints Principais da API:**
+
+### Autenticação (`/auth`)
+* `POST /auth/login` — Autentica o usuário e retorna o token JWT.
+
+### Livros (`/livros`)
+* `GET /livros` — Lista os livros cadastrados na estante.
+* `POST /livros` — Cadastra um novo livro na estante *(Requer Token JWT)*.
+* `PUT /livros/:id` — Atualiza informações de um livro *(Requer Token JWT)*.
+* `DELETE /livros/:id` — Remove um livro da estante *(Requer Token JWT)*.
