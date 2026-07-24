@@ -29,13 +29,13 @@ Para testar a aplicação publicada e a proteção de rotas via JWT, utilize a c
 * **Vercel** (Hospedagem do Front-End)
 
 
-## **Arquitetura e Organização (MVC):**
-O projeto segue o padrão arquitetural **MVC**, garantindo separação clara de responsabilidades:
+## Arquitetura e Organização do Projeto:
+O projeto segue uma estrutura organizada e modular:
 
-* `src/models/`: Definição e comunicação direta com as tabelas do PostgreSQL.
-* `src/controllers/`: Regras de negócio da aplicação e manipulação das requisições/respostas.
-* `src/routes/`: Mapeamento dos endpoints da API (`/auth` e `/livros`).
-* `src/middlewares/`: Validação de tokens JWT e tratamento de autorizações (401/403).
+* `src/config/`: Configuração e conexão com o banco de dados PostgreSQL.
+* `src/controllers/`: Regras de negócio, consultas ao banco de dados e manipulação de requisições/respostas.
+* `src/routes/`: Mapeamento das rotas e endpoints da API (`/auth` e `/livros`).
+* `src/middlewares/`: Validação dos tokens JWT e proteção de rotas (tratamento de erros 401/403).
 
 
 ## **Endpoints Principais da API:**
