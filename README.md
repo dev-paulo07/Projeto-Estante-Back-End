@@ -13,7 +13,7 @@ Para testar a aplicação publicada e a proteção de rotas via JWT, utilize a c
 
 
 ## **Links da Aplicação:**
-* **Aplicação Publicada (Front-End - Vercel):** `https://seu-projeto-frontend.vercel.app`
+* **Aplicação Publicada (Front-End - Vercel):** `https://projeto-estante-three.vercel.app`
 * **API em Nuvem (Back-End - Render):** `https://projeto-estante-back-end.onrender.com`
 
 
