@@ -3,9 +3,7 @@
 ## **Desenvolvedor:**
 * Paulo Castro
 
-> Esta é a API RESTful desenvolvida para a AV1 do Oxetech no curso de Desenvolvimento Web Full Stack. O sistema gerencia a autenticação de usuários, regras de negócio e o controle de CRUD completo dos livros na estante, com persistência relacional em nuvem.
-
----
+> Esta é a API RESTful desenvolvida para a AV2 do Oxetech no curso de Desenvolvimento Web Full Stack. O sistema gerencia a autenticação de usuários, regras de negócio e o controle de CRUD completo dos livros na estante, com persistência relacional em nuvem.
 
 ## **Credenciais para Teste (Avaliação):**
 Para testar a aplicação publicada e a proteção de rotas via JWT, utilize a conta de testes abaixo:
