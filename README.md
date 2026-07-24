@@ -11,13 +11,11 @@ Para testar a aplicação publicada e a proteção de rotas via JWT, utilize a c
 * **E-mail:** `usuario.teste@email.com`
 * **Senha:** `estante123`
 
----
 
 ## **Links da Aplicação:**
 * **Aplicação Publicada (Front-End - Vercel):** `https://seu-projeto-frontend.vercel.app`
 * **API em Nuvem (Back-End - Render):** `https://projeto-estante-back-end.onrender.com`
 
----
 
 ## **Tecnologias Utilizadas & Deploy:**
 * **Node.js** (Ambiente de execução)
@@ -30,7 +28,6 @@ Para testar a aplicação publicada e a proteção de rotas via JWT, utilize a c
 * **Render** (Hospedagem da API e Banco de Dados PostgreSQL)
 * **Vercel** (Hospedagem do Front-End)
 
----
 
 ## **Arquitetura e Organização (MVC):**
 O projeto segue o padrão arquitetural **MVC**, garantindo separação clara de responsabilidades:
@@ -40,7 +37,6 @@ O projeto segue o padrão arquitetural **MVC**, garantindo separação clara de 
 * `src/routes/`: Mapeamento dos endpoints da API (`/auth` e `/livros`).
 * `src/middlewares/`: Validação de tokens JWT e tratamento de autorizações (401/403).
 
----
 
 ## **Endpoints Principais da API:**
 
